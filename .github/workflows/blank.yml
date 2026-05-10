@@ -15,12 +15,8 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v6
         with:
-<<<<<<< HEAD
           go-version: '1.24'
-=======
-          go-version: '1.21'
           cache: false             # 重点：关掉它，这样它就不会去找 go.sum 了
->>>>>>> df0d1cf (Update go.mod)
 
       - name: Build for All Platforms
         run: |
