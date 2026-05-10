@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"runtime"
+)
 
 func main() {
-	fmt.Println("Hello macOS! This is Go version v1.0.0")
+	fmt.Printf("Hello! This is v2.0.0. Running on %s/%s\n", runtime.GOOS, runtime.GOARCH)
+	//Hello! This is v2.0.0. Running on darwin/arm64
 }
